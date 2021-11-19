@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opacity and Rgba</title>
+    <style>
+        div {
+            background-color: green;
+        }
+        
+        div.first {
+            background: rgba(0, 128, 0, 0.1);
+        }
+        div.second {
+            background: rgba(0, 128, 0, 0.3);
+        }
+
+        div.third {
+            opacity:0.1 ;
+        }
+        div.fourth {
+            opacity:0.3 ;
+        }
+    </style>
+</head>
+
+<body>
+    <!--the diff in this example you will see that the lines in RGBA value will not have opacity but only in 2nd case(opacity) will be applied on the words-->
+    <h4>here is opacity using Rgba</h4>
+    <div class="first">
+        <p>10% opacity</p>
+    </div>
+    <div class="second">
+        <p>30% opacity</p>
+    </div>
+    <div>
+        <p>100% opacity/p>
+    </div><br><br><br>
+ 
+    
+    <h4>here is opacity using opacity property</h4>
+    <div class="third">
+        <p>10% opacity</p>
+    </div>
+    <div class="fourth">
+        <p>30% opacity</p>
+    </div>
+    <div>
+        <p>100% opacity/p>
+    </div><br><br><br>
+
+</body>
+
+</html>
